@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Demands" Version="3.0.1-pre2" />
+      <PackageReference Include="Demands.Ussc" Version="1.0.6" />
+      <PackageReference Include="OrgStructure" Version="4.0.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="organization.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
